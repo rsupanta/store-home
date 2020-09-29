@@ -1,0 +1,188 @@
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;700&family=Oswald@400;700&family=Roboto&display=swap");
+* {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+body {
+  background-color: white;
+  color: black;
+  font-family: "Open Sans", sans-serif;
+  margin: 0;
+  padding: 0;
+  margin: auto;
+  width: 100%;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+header {
+  width: 100%;
+}
+
+nav ul {
+  text-decoration: none;
+  text-transform: none;
+  list-style: none;
+}
+
+nav ul a {
+  text-decoration: none;
+  color: black;
+}
+
+#header-top-wrapper {
+  background-color: #f8edeb;
+}
+
+#header-top {
+  width: 70%;
+  height: 30px;
+  font-size: 12px;
+  margin: auto;
+  margin-top: 0px;
+  padding-top: 0px;
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 1fr 1fr;
+      grid-template-columns: 1fr 1fr;
+}
+
+#header-top ul {
+  margin: 7px;
+  padding: 0px;
+}
+
+#header-top-right nav ul {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -ms-flex-line-pack: center;
+      align-content: center;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+}
+
+#header-top-right nav ul li {
+  padding-left: 15px;
+}
+
+#header-top-left nav ul {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -ms-flex-line-pack: start;
+      align-content: flex-start;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+}
+
+#header-2nd-wrapper {
+  background-color: #fcd5ce;
+  font-family: "Oswald", sans-serif;
+  font-weight: 700;
+}
+
+#header-2nd {
+  width: 70%;
+  margin: auto;
+}
+
+#header-2nd img {
+  height: 48px;
+}
+
+#header-2nd {
+  height: 53px;
+  font-size: 12px;
+  margin: auto;
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 1fr 2fr 1fr;
+      grid-template-columns: 1fr 2fr 1fr;
+}
+
+#header-2nd-icon {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 1fr 1fr;
+      grid-template-columns: 1fr 1fr;
+}
+
+#header-2nd-icon {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -ms-flex-line-pack: end;
+      align-content: flex-end;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+}
+
+#header-2nd-icon i {
+  padding: 20px;
+  padding-right: 0;
+}
+
+#header-2nd-icon li {
+  text-decoration: none;
+  text-transform: uppercase;
+  list-style: none;
+  font-size: 14px;
+}
+
+/* Style the search field */
+form.search-bar-main input[type="text"] {
+  margin-top: 5px;
+  padding: 10px;
+  font-size: 16px;
+  border: none;
+  border-bottom: 2px solid #ffb5a7;
+  float: left;
+  width: 80%;
+  background: #fcd5ce;
+}
+
+/* Style the submit button */
+form.search-bar-main button {
+  margin-top: 4px;
+  float: left;
+  width: 10%;
+  padding: 10px;
+  font-size: 17px;
+  background-color: #fcd5ce;
+  border: none;
+  border-bottom: 2px solid #ffb5a7;
+  cursor: pointer;
+}
+
+form.search-bar-main button:hover {
+  background: #ffb5a7;
+}
+
+input:focus {
+  outline: none;
+}
+
+/* Clear floats */
+form.search-bar-maine::after {
+  content: "";
+  clear: both;
+  display: table;
+}
+/*# sourceMappingURL=store.css.map */
