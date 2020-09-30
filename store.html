@@ -5,9 +5,13 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Store</title>
+    <!-- font awesome import -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.14.0/css/all.min.css"
         integrity="sha512-1PKOgIY59xJ8Co8+NE6FZ+LOAZKjy+KY8iq0G4B3CyeY6wYHN3yt9PW0XpSriVlkMXe40PTKnXrLnZ9+fkDaog=="
         crossorigin="anonymous" />
+    <!-- Link Swiper's CSS -->
+    <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css">
+    <!-- my css -->
     <link rel="stylesheet" href="store.css">
 </head>
 
@@ -30,12 +34,12 @@
                     <div id="header-top-right">
                         <nav>
                             <ul>
-                                <li><a href="http://" target="_blank" rel="noopener noreferrer">Sale</a></li>
-                                <li><a href="http://" target="_blank" rel="noopener noreferrer">About Us</a></li>
-                                <li><i class="fab fa-facebook-f"><a href="http://" target="_blank"
-                                            rel="noopener noreferrer"></a></i></li>
-                                <li><i class="fas fa-envelope" aria-hidden="true"></i><a
-                                        href="mailto:md.ragib.supanta@gmail.com"></a>
+                                <li><a href="#">Sale</a></li>
+                                <li><a href="#">About Us</a></li>
+                                <li><a href="#"><i class="fab fa-facebook-f"></i></a></li>
+
+                                <li><a href="mailto:md.ragib.supanta@gmail.com"><i class="fas fa-envelope"
+                                            aria-hidden="true"></i></a>
                                 </li>
                             </ul>
                         </nav>
@@ -46,8 +50,13 @@
             <!-- logo/search bar -->
             <div id="header-2nd-wrapper">
                 <nav id="header-2nd">
-                    <div><img src="https://www.easternmobilebd.com/wp-content/uploads/2019/10/em_logo.png" alt="">
+                    <div><a href="/store.html">
+                            <h1>rsupanta</h1>
+                        </a>
                     </div>
+                    <!-- <div><a href="/store.html"><img
+                                src="https://www.easternmobilebd.com/wp-content/uploads/2019/10/em_logo.png" alt=""></a>
+                    </div> -->
                     <div id="search-bar">
                         <form class="search-bar-main">
                             <input type="text" autocomplete="off" placeholder="Search.." name="search">
@@ -66,11 +75,22 @@
             <!-- menu bar -->
             <nav id="main-menu">
                 <ul>
-                    <li>Home</li>
-                    <li>Store</li>
-                    <li>Blog</li>
-                    <li>Team</li>
-                    <li>Contact</li>
+                    <a href="#">
+                        <li>Home</li>
+                    </a>
+                    <a href="#">
+                        <li>Store</li>
+                    </a>
+                    <a href="#">
+                        <li>Blog</li>
+                    </a>
+                    <a href="#">
+                        <li>Team</li>
+                    </a>
+                    <a href="#">
+                        <li>Contact</li>
+                    </a>
+
                 </ul>
             </nav>
             <!-- menu bar end -->
@@ -80,11 +100,30 @@
         <section id="content-wrapper">
             <!-- slider -->
             <section id="slider-main">
-                <div>
-                    <h1>Slider</h1>
+                <div class="swiper-container">
+                    <div class="swiper-wrapper">
+                        <div class="swiper-slide">Slide 1</div>
+                        <div class="swiper-slide">Slide 2</div>
+                        <div class="swiper-slide">Slide 3</div>
+                        <div class="swiper-slide">Slide 4</div>
+                        <div class="swiper-slide">Slide 5</div>
+                        <div class="swiper-slide">Slide 6</div>
+                        <div class="swiper-slide">Slide 7</div>
+                        <div class="swiper-slide">Slide 8</div>
+                        <div class="swiper-slide">Slide 9</div>
+                        <div class="swiper-slide">Slide 10</div>
+                    </div>
+                    <!-- Add Pagination -->
+                    <div class="swiper-pagination"></div>
+                    <!-- Add Arrows -->
+                    <div class="swiper-button-next"></div>
+                    <div class="swiper-button-prev"></div>
                 </div>
+
+
             </section>
             <!-- slider end -->
+
             <section id="img-background">
                 <div>
                     <h2>SELL USED & DAMAGED SMARTPHONE</h2>
@@ -97,32 +136,32 @@
                     <h2>FEATURED PRODUCT</h2>
 
                     <div class="card-product">
-                        <img src="img/product-1.jpg" alt="product-1">
+                        <img src="static/img/product-1.jpg" alt="product-1">
                         <p>Samsung S10 Plus Display</p>
                         <strong>৳ 23,000.00</strong>
                     </div>
 
 
                     <div class="card-product">
-                        <img src="img/product-1.jpg" alt="product-1">
+                        <img src="static/img/product-1.jpg" alt="product-1">
                         <p>Samsung S10 Plus Display</p>
                         <strong>৳ 23,000.00</strong>
                     </div>
 
                     <div class="card-product">
-                        <img src="img/product-1.jpg" alt="product-1">
+                        <img src="static/img/product-1.jpg" alt="product-1">
                         <p>Samsung S10 Plus Display</p>
                         <strong>৳ 23,000.00</strong>
                     </div>
 
                     <div class="card-product">
-                        <img src="img/product-1.jpg" alt="product-1">
+                        <img src="static/img/product-1.jpg" alt="product-1">
                         <p>Samsung S10 Plus Display</p>
                         <strong>৳ 23,000.00</strong>
                     </div>
 
                     <div class="card-product">
-                        <img src="img/product-1.jpg" alt="product-1">
+                        <img src="static/img/product-1.jpg" alt="product-1">
                         <p>Samsung S10 Plus Display</p>
                         <strong>৳ 23,000.00</strong>
                     </div>
@@ -134,31 +173,31 @@
                     <h2>LATEST PRODUCT ON SALE</h2>
 
                     <div class="card-product">
-                        <img src="img/product-1.jpg" alt="product-1">
+                        <img src="static/img/product-1.jpg" alt="product-1">
                         <p>Samsung S10 Plus Display</p>
                         <strong><span>৳ 23,000</span> ৳ 20,000</strong>
                     </div>
 
                     <div class="card-product">
-                        <img src="img/product-1.jpg" alt="product-1">
+                        <img src="static/img/product-1.jpg" alt="product-1">
                         <p>Samsung S10 Plus Display</p>
                         <strong><span>৳ 24,000</span> ৳ 19,000</strong>
                     </div>
 
                     <div class="card-product">
-                        <img src="img/product-1.jpg" alt="product-1">
+                        <img src="static/img/product-1.jpg" alt="product-1">
                         <p>Samsung S10 Plus Display</p>
                         <strong><span>৳ 15,000</span> ৳ 13,000</strong>
                     </div>
 
                     <div class="card-product">
-                        <img src="img/product-1.jpg" alt="product-1">
+                        <img src="static/img/product-1.jpg" alt="product-1">
                         <p>Samsung S10 Plus Display</p>
                         <strong><span>৳ 10,000</span> ৳ 8,000</strong>
                     </div>
 
                     <div class="card-product">
-                        <img src="img/product-1.jpg" alt="product-1">
+                        <img src="static/img/product-1.jpg" alt="product-1">
                         <p>Samsung S10 Plus Display</p>
                         <strong><span>৳ 1,000</span> ৳ 800</strong>
                     </div>
@@ -171,22 +210,22 @@
                     <h2>BROWSE OUR CATEGORY</h2>
                     <div>
                         <div class="product-category-browser">
-                            <img src="img/product-1.jpg" alt="">
+                            <img src="static/img/product-1.jpg" alt="">
                             <strong>USED SMARTPHONE</strong>
                             <p>N PRODUCT</p>
                         </div>
                         <div class="product-category-browser">
-                            <img src="img/product-1.jpg" alt="">
+                            <img src="static/img/product-1.jpg" alt="">
                             <strong>TOOLS</strong>
                             <p>N PRODUCT</p>
                         </div>
                         <div class="product-category-browser">
-                            <img src="img/product-1.jpg" alt="">
+                            <img src="static/img/product-1.jpg" alt="">
                             <strong>MACHINERY</strong>
                             <p>N PRODUCT</p>
                         </div>
                         <div class="product-category-browser">
-                            <img src="img/product-1.jpg" alt="">
+                            <img src="static/img/product-1.jpg" alt="">
                             <strong>SMARTPHONE PARTS</strong>
                             <p>N PRODUCT</p>
                         </div>
@@ -254,6 +293,29 @@
         </footer>
     </div>
 
+
+    <!-- js files -->
+    <!-- Swiper JS -->
+    <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+    <!-- Initialize Swiper -->
+    <script>
+        var swiper = new Swiper('.swiper-container', {
+            spaceBetween: 30,
+            centeredSlides: true,
+            autoplay: {
+                delay: 2500,
+                disableOnInteraction: false,
+            },
+            pagination: {
+                el: '.swiper-pagination',
+                clickable: true,
+            },
+            navigation: {
+                nextEl: '.swiper-button-next',
+                prevEl: '.swiper-button-prev',
+            },
+        });
+    </script>
 </body>
 
 </html>

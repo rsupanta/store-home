@@ -1,5 +1,5 @@
-@import url("https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;700&family=Oswald@400;700&family=Roboto&display=swap");
-
+// import Roboto, Open Sans, Oswald, Lato @400 and 700 weight
+@import url("https://fonts.googleapis.com/css2?family=Lato:wght@400;700&family=Open+Sans:ital,wght@0,400;0,700;1,400&family=Oswald:wght@400;700&family=Roboto&display=swap");
 // colors
 $primary-color: #ffb5a7;
 $secondary-color: #fcd5ce;
@@ -15,7 +15,7 @@ $secondary-font: "Oswald", sans-serif;
 $third-font: "Roboto", sans-serif;
 
 // header width
-$container-desktop: 70%;
+$container-desktop: 65%;
 
 // input form
 $border-bottom: 2px solid $primary-color;
@@ -39,14 +39,15 @@ header {
   width: 100%;
 }
 
+header a {
+  text-decoration: none;
+  color: $primary-text-color;
+}
+
 nav ul {
   text-decoration: none;
   text-transform: none;
   list-style: none;
-}
-nav ul a {
-  text-decoration: none;
-  color: $primary-text-color;
 }
 
 // top header
@@ -55,7 +56,8 @@ nav ul a {
 }
 
 #header-top {
-  width: 70%;
+  width: $container-desktop;
+  background-color: $third-color;
   height: 30px;
   font-size: 12px;
   margin: auto;
@@ -97,9 +99,14 @@ nav ul a {
   width: $container-desktop;
   margin: auto;
 }
-#header-2nd img {
-  height: 48px;
+// #header-2nd img {
+//   height: 48px;
+// }
+#header-2nd div h1 {
+  font-size: 35px;
+  margin-top: -5px;
 }
+
 #header-2nd {
   height: 53px;
   font-size: 12px;
@@ -123,7 +130,6 @@ nav ul a {
   padding-right: 0;
 }
 #header-2nd-icon li {
-  text-decoration: none;
   text-transform: uppercase;
   list-style: none;
   font-size: 14px;
@@ -159,7 +165,8 @@ form.search-bar-main button:hover {
   background: $primary-color;
 }
 
-input:focus {
+form.search-bar-main input:focus,
+button:focus {
   outline: none;
 }
 
@@ -172,3 +179,99 @@ form.search-bar-maine::after {
 // search bar end
 
 // second header end
+
+// main-menu bar
+#main-menu {
+  width: $container-desktop;
+  margin: auto;
+  // position: relative;
+  // z-index: 1;
+}
+// #main-menu::after {
+//   content: "";
+//   position: absolute;
+//   left: 25%;
+//   bottom: 0;
+//   height: 1px;
+//   width: 50%; /* or 100px */
+//   border-bottom: 2px solid $primary-color;
+// }
+
+#main-menu ul a:hover {
+  background-color: $secondary-color;
+  border: 1px solid $primary-color;
+  border-radius: 10px;
+  cursor: pointer;
+}
+
+#main-menu ul {
+  margin: auto;
+  display: flex;
+  flex-direction: row;
+  align-content: space-between;
+  justify-content: center;
+}
+
+#main-menu ul li {
+  font-family: "Lato", sans-serif;
+  font-size: 15px;
+  line-height: 16px;
+  font-weight: 700;
+  text-transform: uppercase;
+  padding: 15px;
+}
+// main-menu bar end
+
+// HEADER STYLE END
+
+// BODY CONTENT STYLE BEGIN
+
+// main-slider
+
+#slider-main {
+  width: 100%;
+  height: 480px;
+  margin: 0px;
+  padding: 0px;
+}
+// html,
+// body {
+//   position: relative;
+//   height: 100%;
+// }
+
+// body {
+//   background: #eee;
+//   font-family: Helvetica Neue, Helvetica, Arial, sans-serif;
+//   font-size: 14px;
+//   color: #000;
+//   margin: 0;
+//   padding: 0;
+// }
+
+.swiper-container {
+  width: 100%;
+  height: 100%;
+}
+
+.swiper-slide {
+  text-align: center;
+  font-size: 18px;
+  background: #fff;
+
+  /* Center slide text vertically */
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: -webkit-flex;
+  display: flex;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  -webkit-justify-content: center;
+  justify-content: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  -webkit-align-items: center;
+  align-items: center;
+}
+
+// slider main end

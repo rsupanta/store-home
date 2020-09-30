@@ -1,4 +1,4 @@
-@import url("https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;700&family=Oswald@400;700&family=Roboto&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Lato:wght@400;700&family=Open+Sans:ital,wght@0,400;0,700;1,400&family=Oswald:wght@400;700&family=Roboto&display=swap");
 * {
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
@@ -20,15 +20,15 @@ header {
   width: 100%;
 }
 
+header a {
+  text-decoration: none;
+  color: black;
+}
+
 nav ul {
   text-decoration: none;
   text-transform: none;
   list-style: none;
-}
-
-nav ul a {
-  text-decoration: none;
-  color: black;
 }
 
 #header-top-wrapper {
@@ -36,7 +36,8 @@ nav ul a {
 }
 
 #header-top {
-  width: 70%;
+  width: 65%;
+  background-color: #f8edeb;
   height: 30px;
   font-size: 12px;
   margin: auto;
@@ -94,12 +95,13 @@ nav ul a {
 }
 
 #header-2nd {
-  width: 70%;
+  width: 65%;
   margin: auto;
 }
 
-#header-2nd img {
-  height: 48px;
+#header-2nd div h1 {
+  font-size: 35px;
+  margin-top: -5px;
 }
 
 #header-2nd {
@@ -140,7 +142,6 @@ nav ul a {
 }
 
 #header-2nd-icon li {
-  text-decoration: none;
   text-transform: uppercase;
   list-style: none;
   font-size: 14px;
@@ -175,7 +176,8 @@ form.search-bar-main button:hover {
   background: #ffb5a7;
 }
 
-input:focus {
+form.search-bar-main input:focus,
+button:focus {
   outline: none;
 }
 
@@ -184,5 +186,70 @@ form.search-bar-maine::after {
   content: "";
   clear: both;
   display: table;
+}
+
+#main-menu {
+  width: 65%;
+  margin: auto;
+}
+
+#main-menu ul a:hover {
+  background-color: #fcd5ce;
+  border: 1px solid #ffb5a7;
+  border-radius: 10px;
+  cursor: pointer;
+}
+
+#main-menu ul {
+  margin: auto;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -ms-flex-line-pack: justify;
+      align-content: space-between;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+#main-menu ul li {
+  font-family: "Lato", sans-serif;
+  font-size: 15px;
+  line-height: 16px;
+  font-weight: 700;
+  text-transform: uppercase;
+  padding: 15px;
+}
+
+#slider-main {
+  width: 100%;
+  height: 480px;
+  margin: 0px;
+  padding: 0px;
+}
+
+.swiper-container {
+  width: 100%;
+  height: 100%;
+}
+
+.swiper-slide {
+  text-align: center;
+  font-size: 18px;
+  background: #fff;
+  /* Center slide text vertically */
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
 }
 /*# sourceMappingURL=store.css.map */
